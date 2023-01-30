@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+     <head lang="en-us">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <link rel="icon" type="image" href="favicon.jpg">
+          <title>Sun Rise</title>
+          <style>
+               body{
+                         background-color:#cbbaad;
+               }
+               p{
+                    color:rgb(0,0,250);
+                    font-size:20px;
+                    font-family:sans-serif;
+               }
+               h1{
+                    color:rgb(10,55,105);
+               }
+               a{
+                    color:hsla(180,10%,40%,0.8);
+               }
+               table{
+                    border:1px solid grey;
+                    border-collapse:collapse;
+                    height:80%;
+                    width:80%;
+               }
+               th:hover{
+                    text-align:left;
+                    color:light blue;
+                    font-size:25px;
+                    font-family:default;
+                    border:2px dashed black;
+               }
+               th,td{
+                    padding:4px;
+                    border-spacing:13px;
+               }
+               td{
+                    text-align:center;
+                    border:2px ridge black;
+               }
+               tr:hover{
+                    background-color:green;
+               }
+               aside {
+                    width: 30%;
+                    padding-right: 50px;
+                    margin-right: 20px;
+                    float: right;
+                    font-style: italic;
+               }
+          </style>
+     </head>
+<body>
+     <h1>Early morning Sun Rise <img src="sunrise.gif" style="height:40px;width:60px;"></h1>
+     <p>Click on the link <a href="coffee.jpg " alt="Coffee" target="_blank" style="font-family:italic;color:green;">Coffee</a></p>
+     <p>Click on the image <a href="coffee.jpg "><img src="weather.jpg" alt="Coffee" style="height:40px;width:60px;"></a></p>
+     <p style="font-size:14px;">Write an email about sunrise to:<a href="mail to:20b01a05d1@svecw.edu.in">Email</a></p>
+     <table>
+          <caption style="color:brown;font-size:30px;background-image:url('sunrise.jpg');background-repeat:repeat;">Sun Rise and its Timings in different locations</caption>
+          <colgroup>
+               <col span="1">
+               <col span="2" style="background-color:yellow;">
+          </colgroup>
+          <tr>
+               <th>Name</th>
+               <th colspan="2">Place and State</th>
+               <th>Time to rise</th>
+               <th>Drinks Coffee</th>
+          </tr>
+          <tr>
+               <td>Arihant</td>
+               <td>California</td>
+               <td>America</td>
+               <td>6:00 AM</td>
+               <td>Yes</td>
+          </tr>
+          <tr>
+               <td>Bhanu</td>
+               <td>Hyderabad</td>
+               <td>Telangana</td>
+               <td>6:00 AM</td>
+               <td>Yes</td>
+          </tr>
+          <tr>
+               <td>Usha</td>
+               <td>Narasaraopet</td>
+               <td>Andhra Pradesh</td>
+               <td>6:00 AM</td>
+               <td>No</td>
+          </tr>
+          <tr>
+               <td>Neeraj</td>
+               <td>Indore</td>
+               <td>Madhya Pradesh</td>
+               <td>6:00 AM</td>
+               <td>No</td>
+          </tr>
+          <tr>
+               <td>Tansi</td>
+               <td>Miryalaguda</td>
+               <td>Telangana</td>
+               <td>6:00 AM</td>
+               <td>No</td>
+          </tr>
+     </table>
+     <p>Sunrise Timings may vary.Generally it happens at:</p>
+     <section><aside><figure><img src="sunrise.gif"><figcaption>Fig1:This is a picture of sunrise</figcaption></figure></aside>
+     <ul>
+          <li>5:30 AM</li>
+          <li>6:00 AM</li>
+          <li>6:10 AM</li>
+          <li>6:30 AM</li>
+     </ul>
+     </section>
+     <p>General timings at which people wakeup</p>
+     <ol start="A">
+          <li>5:30 AM</li>
+          <pre style="font-family:italic;">
+               Generally,elder people wakeup at this time.
+                              Age group:>60
+          </pre>
+          <li>6:00 AM</li>
+          <pre style="font-family:italic;">
+               Generally,Parental aged people wakeup at this time.
+                              Age group:>25
+          </pre>
+          <li>6:10 AM</li>
+          <pre style="font-family:italic;">
+               Generally,younger people wakeup at this time.
+                              Age group:>20
+          </pre>
+     </ol>
+<hr>
+<p><h3>Using the above data please fill the form:</h3></p>
+<form>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="name"><br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" name="name" required><br>
+    <label for="pwd">Password:</label><br>
+    <input type="password" id="pwd" name="password" required><br>
+    <label for="address">Address:</label><br>
+    <input type="textarea" rows="10" cols="20" required><br>
+    <label for="gender">Gender:</label>
+    <input type="radio" id="g1" name="gender" value="Male">
+    <label for="g1">Male </label><!--if name is not written then all options can be selected -->
+    <input type="radio" id="g2" name="gender" value="Female">
+    <label for="g2">Female</label><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email"><br>
+    <label for="select_time">At what time do you wake up: </label>
+    <select id="select_time" name="time">
+           <option value="5:30AM">5:30AM</option>
+           <option value="6:00AM">6:00AM</option>
+           <option value="6:10AM" selected>6:10AM</option>
+           <option value="6:20AM">6:20AM</option>
+    </select><br>
+    <label for="food">What do you drink in the morning:</label>
+       <input type="checkbox" id="f1" name="food" value="Milk">
+        <label for="f1">Milk</label>
+       <input type="checkbox" id="f2" name="food" value="Coffee">
+        <label for="f2">Coffee</label>
+       <input type="checkbox" id="f3" name="food" value="Tea">
+         <label for="f3">Tea</label><br>
+   <input type="button" value="Submit" style="align:"center">
+</form>
+<p style="font-size:40px">&#128588;&#128588&#128588;</p>
+Thanks for providiong your information
+</body>
+</html>
